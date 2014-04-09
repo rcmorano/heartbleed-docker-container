@@ -1,5 +1,5 @@
-MAINTAINER Roberto C. Morano rcmova@gmail.com
 FROM jayofdoom/docker-ubuntu-14.04
+MAINTAINER Roberto C. Morano rcmova@gmail.com
 RUN apt-get update
 RUN apt-get install -y golang git
 RUN mkdir /tmp/go
