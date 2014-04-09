@@ -10,7 +10,7 @@ Build image and spawn an interactive shell:
 
 ```
 wget -O /tmp/Dockerfile.heartbleed https://raw.githubusercontent.com/rcmorano/heartbleed-docker-container/master/Dockerfile
-cat /tmp/Dockerfile.heartbleed | docker build -t rcmorano/heartbleed
+cat /tmp/Dockerfile.heartbleed | docker build -t rcmorano/heartbleed -
 docker run -t -i rcmorano/heartbleed
 ```
 
