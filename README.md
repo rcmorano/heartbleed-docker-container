@@ -3,6 +3,11 @@ heartbleed-docker-container
 
 Dockerfile to create a Heartbleed-able interactive container
 
+Why?
+=======
+
+I didn't want to mess with Go in my system so I made a Heartbleed-able container with the tool precompiled and ready to check for the vuln.
+
 Usage
 =====
 
