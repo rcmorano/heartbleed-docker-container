@@ -11,11 +11,22 @@ I didn't want to mess with Go in my system so I made a Heartbleed-able container
 Usage
 =====
 
-Build image and spawn an interactive shell and run Heartbleed:
+Pull the trusted build:
+
+```
+docker pull rcmorano/heartbleed 
+```
+
+Or build an image from source Dockerfile:
 
 ```
 wget -O /tmp/Dockerfile.heartbleed https://raw.githubusercontent.com/rcmorano/heartbleed-docker-container/master/Dockerfile
 cat /tmp/Dockerfile.heartbleed | docker build -t rcmorano/heartbleed -
+```
+
+Then spawn an interactive shell and run Heartbleed:
+
+```
 docker run -t -i rcmorano/heartbleed /bin/bash --login
 root@f3a2fa2eef5b:/# Heartbleed 
 This is a tool for detecting OpenSSL Heartbleed vulnerability (CVE-2014-0160).
